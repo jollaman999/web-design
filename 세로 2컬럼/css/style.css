@@ -1,0 +1,70 @@
+.container {
+  width: 1000px;
+  overflow: hidden;
+}
+.container > div {
+  /* border: 1px solid blue; 임시로 만든 border 다시 활성화하면 items 의 총합의 798 픽셀이 되는데 border 때문에 item 들이 아래로 내려가게됨.*/
+  /* height: 800px; 와이어프레임 작성을 위해 임시로 주어진 값이므로 비활성화 */
+  float: left;
+  box-sizing: border-box;
+}
+.left {
+  width: 200px;
+}
+.right {
+  width: 800px;
+}
+header {
+}
+header > div {
+  border: 1px solid red;
+}
+.header-logo {
+  height: 100px;
+}
+.navi {
+  /* height: 400px; 와이어 프레임 작성을 위해 임시로 준 값이므로 height 가 주어지면 안됨.*/
+}
+.slide {
+}
+.slide > div {
+  border: 1px solid green;
+  height: 350px;
+}
+.items {
+  overflow: hidden;
+}
+.items > div {
+  border: 1px solid black;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}
+.news {
+  width: 300px;
+}
+.banner {
+  width: 250px;
+}
+.shortcut {
+  width: 250px;
+}
+footer {
+  overflow: hidden;
+}
+footer > div {
+  border: 1px solid pink;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+}
+.footer-logo {
+  width: 200px;
+}
+.copyright {
+  width: 600px;
+}
+.copyright div {
+  border: 1px solid black;
+  height: 50px;
+}
