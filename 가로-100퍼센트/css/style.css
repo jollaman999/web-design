@@ -1,0 +1,78 @@
+.header-inner {
+  border: 1px solid orange;
+}
+header {
+  width: 1200px;
+  margin: auto;
+  /* overflow: hidden; 넘치는 부분이 안보이게 되기 때문에 높이 값을 강제로 지정해야 함. */
+  height: 100px;
+}
+header > div {
+  border: 1px solid magenta;
+  height: 100px;
+}
+.header-logo {
+  width: 200px;
+  float: left;
+}
+.navi {
+  width: 600px;
+  float: right;
+}
+.content-inner {
+  border: 1px solid red;
+}
+.slide {
+  width: 1200px;
+  margin: auto;
+}
+.slide div {
+  border: 1px solid green;
+  height: 300px;
+}
+.items {
+  width: 1200px;
+  margin: auto;
+  /* 자식 요소에 float 속성이 있을때 부모 요소는 height 속성을 잃어버린다.
+    그런데 overflow: hidden 속성을 주면 높이가 생기는데 대신에 넘치는 부분은 가려짐. */
+  overflow: hidden;
+}
+.items > div {
+  border: 1px solid pink;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}
+.news {
+  width: 500px;
+}
+.banner {
+  width: 350px;
+}
+.shortcut {
+  width: 350px;
+}
+.footer-inner {
+  border: 1px solid orange;
+}
+footer {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+footer > div {
+  border: 1px solid blue;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+}
+.footer-logo {
+  width: 200px;
+}
+.copyright {
+  width: 1000px;
+}
+.copyright div {
+  border: 1px solid green;
+  height: 50px;
+}
