@@ -48,7 +48,7 @@ header div {
 footer {
   overflow: hidden;
 }
-footer div {
+footer > div {
   border: 1px solid blue;
   height: 100px;
   float: left;
@@ -59,6 +59,10 @@ footer div {
 }
 .copyright {
   width: 800px;
+}
+.copyright div {
+  border: 1px solid green;
+  height: 50px;
 }
 .sns {
   width: 200px;
