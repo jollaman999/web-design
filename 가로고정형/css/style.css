@@ -30,7 +30,7 @@ header div {
     그런데 overflow: hidden 속성을 주면 높이가 생기는데 대신에 넘치는 부분은 가려짐. */
   overflow: hidden;
 }
-.items div {
+.items > div {
   border: 1px solid pink;
   height: 200px;
   float: left;
@@ -58,12 +58,12 @@ footer > div {
   width: 200px;
 }
 .copyright {
-  width: 800px;
+  width: 1000px;
 }
 .copyright div {
   border: 1px solid green;
   height: 50px;
 }
-.sns {
+.family-site {
   width: 200px;
 }
