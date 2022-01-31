@@ -1,0 +1,93 @@
+/*-------- 1 --------*/
+.container {
+  border: 1px solid #000;
+  width: 1000px;
+}
+
+.container > div {
+  float: left;
+}
+
+.left {
+  width: 200px;
+  background-color: #aaa;
+}
+
+.right {
+  width: 800px;
+  background-color: #ccc;
+}
+
+/*-------- left --------*/
+.header-logo {
+  background-color: #111;
+  height: 100px;
+}
+
+.navi {
+  background-color: #333;
+  height: 400px;
+}
+
+/*-------- right--------*/
+.slide {
+}
+
+.slide > div {
+  height: 350px;
+  background-color: #ccc;
+}
+
+/*-------- 2 depth - right - items --------*/
+.items {
+}
+
+.items > div {
+  height: 200px;
+  float: left;
+}
+
+.news {
+  background-color: #111;
+  width: 300px;
+}
+
+.banner {
+  background-color: gold;
+  width: 250px;
+}
+
+.shortcut {
+  background-color: hotpink;
+  width: 250px;
+}
+
+footer {
+}
+
+footer > div {
+  height: 100px;
+  float: left;
+}
+
+.footer-logo {
+  width: 200px;
+  background-color: springgreen;
+}
+
+.copyright {
+  width: 600px;
+  background-color: maroon;
+}
+
+.copyright > div {
+  height: 50px;
+}
+
+.copyright :nth-child(1) {
+  background-color: mediumturquoise;
+}
+
+.copyright :nth-child(2) {
+  background-color: orange;
+}
