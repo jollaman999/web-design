@@ -1,0 +1,26 @@
+.container {
+  border: 5px solid red;
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.container > div {
+  background-color: dodgerblue;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+}
+
+.box1 {
+  top: 100%;
+}
+
+.box2 {
+  left: 100%;
+}
+
+.box3 {
+  top: 100%;
+  left: 100%;
+}
