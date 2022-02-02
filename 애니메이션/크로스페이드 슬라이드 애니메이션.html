@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            border: 1px solid #ccc;
+            margin: auto;
+        }
+        .container div {
+            box-sizing: border-box;
+        }
+        .header {
+            height: 100px;
+        }
+        .header-logo {
+            height: 100px;
+            width: 200px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+        .navi {
+            height: 100px;
+            width: 400px;
+            float: right;
+            border: 1px solid #ccc;
+        }
+        .slide {
+            height: 300px;
+            width: 1200px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide > div {
+            font-size: 0;
+        }
+        .slide img {
+            width: 1200px;
+            height: 300px;
+        }
+        .slide div a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: slide 10s linear infinite;
+            opacity: 0; /* 제일 처음에 모든 이미지가 opacity 가 0이여야 함 */
+        }
+        .slide div a:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .slide div a:nth-child(2) {
+            animation-delay: 3.5s;
+        }
+        .slide div a:nth-child(3) {
+            animation-delay: 7s;
+        }
+        @keyframes slide {
+            0% {
+                opacity : 0;
+                visibility: hidden; /* 제일 마지막에 겹쳐지는 3번쨰 이미지가 계속 위에 있게 되어 다른 이미지를 클릭하여도 항상 3번쨰 이미지의 링크로 이동하게 됨. */
+            }
+            5% { opacity : 1; }
+            35% { opacity : 1; }
+            40% { opacity : 0; }
+            100% { opacity : 0; }
+        }
+        .items {
+            overflow: hidden;
+        }
+        .items > div {
+            float: left;
+            height: 200px;
+            width: 400px;
+            border: 1px solid #ccc;
+        }
+        .copyright {
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo"></div>
+            <div class="navi"></div>
+        </div>
+        <div class="slide">
+            <div>
+                <a href="">
+                    <img src="images/1.jpg" alt="1">
+                </a>
+                <a href="">
+                    <img src="images/2.jpg" alt="2">
+                </a>
+                <a href="">
+                    <img src="images/3.jpg" alt="3">
+                </a>
+            </div>
+        </div>
+        <div class="items">
+            <div class="news"></div>
+            <div class="banner"></div>
+            <div class="shortcut"></div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+</body>
+</html>
