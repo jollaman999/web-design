@@ -102,3 +102,32 @@
 .tab2 img {
     width: 110px;
 }
+
+.tab-inner .tabs a {
+    display: block;
+    padding: 3px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+}
+
+.tab-inner .tabs a:last-child {
+    border-bottom: none;
+}
+
+.tab-inner .tabs a em,
+.tab-inner .tabs a b {
+    float: left;
+}
+
+.tab-inner .tabs a em {
+    width: 70%;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tab-inner .tabs a b {
+    width: 30%;
+    text-align: right;
+}
