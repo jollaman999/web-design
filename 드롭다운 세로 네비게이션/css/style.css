@@ -1,0 +1,107 @@
+.container {
+    width: 1200px;
+}
+
+.left {
+    width: 200px;
+    float: left;
+}
+
+.left header > div {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.left .header-logo {
+    height: 100px;
+}
+
+.left .navi {
+    height: 700px;
+}
+
+.right {
+    width: 1000px;
+    float: left;
+}
+
+.right .slide {
+    height: 500px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.items {
+    overflow: hidden;
+}
+
+.items div {
+    border: 1px solid #ccc;
+    float: left;
+    width: 333.3px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+footer > div {
+    float: left;
+}
+
+footer div {
+    box-sizing: border-box;
+}
+
+footer .footer-logo {
+    border: 1px solid #ccc;
+    width: 800px;
+    height: 100px;
+}
+
+footer .copyright div {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 50px;
+}
+
+.navi {
+    padding: 5px;
+}
+
+.navi a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+    padding: 5px;
+}
+
+.navi .menu {
+    border: 1px solid black;
+}
+
+.navi li:hover > a {
+    background-color: black;
+    color: white;
+}
+
+.navi .sub-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+.navi li a {
+    display: block;
+    transition: 0.5s;
+}
+
+.navi .sub-menu {
+    display: none;
+}
+
+.navi li, .navi ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
