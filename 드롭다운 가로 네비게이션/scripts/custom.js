@@ -1,10 +1,8 @@
 /* Navigation */
 $('.menu li').mouseenter(function() {
-  // $('.sub-menu').slideDown()
-  $(this).children('.sub-menu').stop().slideDown()
+  $('.sub-menu, .sub-back').stop().slideDown(300)
 })
 
 $('.menu li').mouseleave(function() {
-  // $('.sub-menu').slideDown()
-  $(this).children('.sub-menu').stop().slideUp()
+  $('.sub-menu, .sub-back').stop().slideUp(300)
 })

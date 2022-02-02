@@ -5,6 +5,7 @@
 .header-inner {
     background-color: #eee;
     height: 100px;
+    position: relative;
 }
 
 .header-inner header > div {
@@ -133,7 +134,6 @@
     text-align: right;
 }
 
-
 .modal {
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -168,14 +168,18 @@
     float: right;
 }
 
+.navi a {
+    text-decoration: none;
+}
+
 .menu {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 65px;
 }
 
 .menu li {
-    float: left;
+    float: right;
     width: 150px;
     box-sizing: border-box;
     text-align: center;
@@ -195,15 +199,26 @@
 
 .sub-menu {
     border: 1px solid #000;
-    background-color: #fff;
     display: none;
 }
 .sub-menu a {
+    background-color: #000;
+    color: #fff;
     display: block;
     padding: 5px;
 }
 
 .sub-menu a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.sub-back {
+    width: 1200px;
+    height: 160px;
     background-color: #000;
-    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    display: none;
 }
