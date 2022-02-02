@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            border: 1px solid #ccc;
+            margin: auto;
+        }
+        .container div {
+            box-sizing: border-box;
+        }
+        .header {
+            height: 100px;
+        }
+        .header-logo {
+            height: 100px;
+            width: 200px;
+            float: left;
+            border: 1px solid #ccc;
+        }
+        .navi {
+            height: 100px;
+            width: 400px;
+            float: right;
+            border: 1px solid #ccc;
+        }
+        .slide {
+            height: 300px;
+            width: 1200px;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide > div {
+            font-size: 0;
+        }
+        .slide img {
+            width: 1200px;
+            height: 300px;
+        }
+        .slide > div a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            /* transform: translateY(200px); */
+            transition: 1s;
+            visibility: hidden;
+        }
+        .slide > div a.active {
+            opacity: 1;
+            /* transform: translateY(0); */
+            visibility: visible;
+        }
+        .items {
+            overflow: hidden;
+        }
+        .items > div {
+            float: left;
+            height: 200px;
+            width: 400px;
+            border: 1px solid #ccc;
+        }
+        .copyright {
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo"></div>
+            <div class="navi"></div>
+        </div>
+        <div class="slide">
+            <div>
+                <a href="">
+                    <img src="images/1.jpg" alt="1">
+                </a>
+                <a href="">
+                    <img src="images/2.jpg" alt="2">
+                </a>
+                <a href="">
+                    <img src="images/3.jpg" alt="3">
+                </a>
+            </div>
+        </div>
+        <div class="items">
+            <div class="news"></div>
+            <div class="banner"></div>
+            <div class="shortcut"></div>
+        </div>
+        <div class="copyright"></div>
+    </div>
+<script type="text/javascript" src="scripts/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
+</html>
