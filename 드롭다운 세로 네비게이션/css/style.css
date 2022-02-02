@@ -79,25 +79,35 @@ footer .copyright div {
 
 .navi .menu {
     border: 1px solid black;
+    position: relative;
 }
 
 .navi li:hover > a {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .navi .sub-menu a:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .navi li a {
-    display: block;
     transition: 0.5s;
 }
 
 .navi .sub-menu {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+.navi .sub-menu a {
+    color: #fff;
 }
 
 .navi li, .navi ul {
