@@ -20,6 +20,8 @@ a {
 
 header {
     height: 100px;
+    position: relative;
+    z-index: 10;
 }
 header > div {
     height: 100px;
@@ -48,7 +50,7 @@ header > div {
 .slide > div {
     position: absolute;
     height: 900px;
-    animation: slide 5s infinite linear;
+    animation: slide 10s infinite linear;
     font-size: 0;
 }
 
@@ -104,4 +106,41 @@ footer > div {
     line-height: 130px;
     text-align: center;
     width: 250px;
+}
+
+/* Navigation */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.menu li > a {
+    display: block;
+    padding: 5px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.menu li:hover > a {
+    background-color: #000;
+    color: #fff
+}
+.sub-menu {
+    background-color: #fff;
+    border: 1px solid #000;
+    display: none;
+}
+.sub-menu a {
+    display: block;
+    padding: 5px;
+    transition: 0.5s;
+}
+.sub-menu a:hover {
+    background-color: #000;
+    color: #fff;
 }

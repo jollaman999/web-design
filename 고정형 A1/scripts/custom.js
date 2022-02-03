@@ -1,7 +1,6 @@
-$('p').css({ 'display': 'none' });
-$('.show-btn').click(function () {
-  $('p').css({ 'display': 'block' });
+$('.menu li').mouseenter(function () {
+  $('.sub-menu').stop().slideDown()
 });
-$('.hide-btn').click(function () {
-  $('p').css({ 'display': 'none' });
+$('.menu li').mouseleave(function () {
+  $('.sub-menu').stop().slideUp()
 });
