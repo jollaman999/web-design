@@ -22,7 +22,6 @@ header {
     height: 100px;
 }
 header > div {
-    border: 1px solid blue;
     height: 100px;
 }
 .header-logo,
@@ -40,12 +39,28 @@ header > div {
     float: right;
 }
 
-.slide {}
-.slide > div {
-    border: 1px solid green;
+.slide {
     height: 300px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.slide > div {
+    position: absolute;
+    height: 900px;
+    animation: slide 5s infinite linear;
+    font-size: 0;
 }
 
+@keyframes slide {
+    0% { top: 0; }
+    30% { top: 0; }
+    35% { top: -300px; }
+    65% { top: -300px; }
+    70% { top: -600px; }
+    95% { top: -600px; }
+    100% { top: 0; }
+}
 .items {
     overflow: hidden;
 }
