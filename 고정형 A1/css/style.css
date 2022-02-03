@@ -25,9 +25,15 @@ header > div {
     border: 1px solid blue;
     height: 100px;
 }
-.header-logo {
-    width: 200px;
+.header-logo,
+.footer-logo {
+    width: 150px;
     float: left;
+}
+.header-logo img,
+.footer-logo img {
+    width: 150px;
+    height: 100px;
 }
 .navi {
     width: 600px;
@@ -55,25 +61,32 @@ header > div {
 .banner {
     width: 350px;
 }
+.banner img {
+    width: 350px;
+    height: 200px;
+}
 .shortcut {
     width: 350px;
 }
-
+.shortcut img {
+    width: 350px;
+    height: 200px;
+}
 footer {
     overflow: hidden;
 }
 footer > div {
-    border: 1px solid green;
     height: 100px;
     float: left;
     box-sizing: border-box;
 }
-.footer-logo {
-    width: 200px;
-}
 .copyright {
     width: 800px;
+    text-align: center;
+    padding-top: 30px;
 }
 .sns {
-    width: 200px;
+    line-height: 130px;
+    text-align: center;
+    width: 250px;
 }
