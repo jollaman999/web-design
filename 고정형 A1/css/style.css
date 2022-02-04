@@ -13,7 +13,6 @@ a {
 }
 
 .container {
-    border: 1px solid red;
     width: 1200px;
     margin: auto;
 }
@@ -67,7 +66,6 @@ header > div {
     overflow: hidden;
 }
 .items > div {
-    border: 1px solid blue;
     height: 200px;
     float: left;
     box-sizing: border-box;
@@ -143,4 +141,67 @@ footer > div {
 .sub-menu a:hover {
     background-color: #000;
     color: #fff;
+}
+
+.tab-inner {
+    width: 95%;
+    margin: auto;
+}
+
+.btn {
+
+}
+
+.btn a {
+    border: 1px solid #000;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    margin-right: -6px;
+    border-bottom: none;
+    margin-bottom: -1px;
+    background-color: #ddd;
+}
+
+.btn a.active {
+    background-color: #fff;
+}
+
+.tabs > div {
+}
+
+.tab1 {
+    border: 1px solid #000;
+    padding: 0 15px;
+}
+
+.tab1 a {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.tab1 a:last-child {
+    border-bottom: none;
+}
+
+.tab1 a b {
+    float: right;
+    font-weight: normal;
+}
+
+.tab2 {
+    border: 1px solid #000;
+    height: 165px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.tab2 img {
+    width: 130px;
+    height: 130px;
 }
