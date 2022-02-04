@@ -38,6 +38,7 @@ header > div {
 .navi {
     width: 600px;
     float: right;
+    margin-right: 20px;
 }
 
 .slide {
@@ -130,9 +131,18 @@ footer > div {
 }
 .sub-menu {
     background-color: #fff;
-    border: 1px solid #000;
-    display: none;
+    border-bottom: 1px solid #000;
+    /* display: none; */
 }
+
+.menu li:first-child .sub-menu {
+    border-left: 1px solid #000;
+}
+
+.menu li:last-child .sub-menu {
+    border-right: 1px solid #000;
+}
+
 .sub-menu a {
     display: block;
     padding: 5px;
@@ -204,4 +214,15 @@ footer > div {
 .tab2 img {
     width: 130px;
     height: 130px;
+}
+
+/* Banner & Shortcut */
+.banner img,
+.shortcut img {
+    width: 95%;
+}
+
+banner, 
+.shortcut {
+    text-align: right;
 }
