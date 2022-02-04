@@ -20,7 +20,7 @@ a {
 header {
     height: 100px;
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
 }
 header > div {
     height: 100px;
@@ -43,24 +43,24 @@ header > div {
 .slide {
     height: 300px;
     width: 1200px;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 .slide > div {
-    position: absolute;
+    /* position: absolute; */
     height: 900px;
     animation: slide 10s infinite linear;
     font-size: 0;
 }
 
 @keyframes slide {
-    0% { top: 0; }
-    30% { top: 0; }
-    35% { top: -300px; }
-    65% { top: -300px; }
-    70% { top: -600px; }
-    95% { top: -600px; }
-    100% { top: 0; }
+    0% { margin-top: 0; }
+    30% { margin-top: 0; }
+    35% { margin-top: -300px; }
+    65% { margin-top: -300px; }
+    70% { margin-top: -600px; }
+    95% { margin-top: -600px; }
+    100% { margin-top: 0; }
 }
 .items {
     overflow: hidden;
