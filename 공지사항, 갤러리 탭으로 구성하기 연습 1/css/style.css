@@ -27,12 +27,30 @@ header > div {
     float: right;
 }
 
-.content-inner {}
+.content-inner {
+    background: #bbb;
+}
 .content-inner > div {}
-.slide {}
-.items {}
-.items > div {}
-
+.slide {
+    width: 1200px;
+    margin: auto;
+    border: 1px solid black;
+    height: 300px;
+}
+.items {
+    width: 1200px;
+    margin: auto;
+}
+.items > div {
+    border: 1px solid black;
+    height: 200px;
+}
+.news {
+    width: 500px;
+}
+.banner {
+    width: 500px;
+}
 .footer-inner {}
 .footer-inner > div {}
 .footer-logo {}
