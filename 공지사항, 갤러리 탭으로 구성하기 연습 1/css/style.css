@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
-body {
-    background-color: black;
-}
+.container {}
+
+.header-inner {}
+.header-inner > div {}
+header {}
+header > div {}
+.header-logo {}
+.navi {}
+
+.content-inner {}
+.content-inner > div {}
+.slide {}
+.items {}
+.items > div {}
+
+.footer-inner {}
+.footer-inner > div {}
+.footer-logo {}
+.copyright {}
