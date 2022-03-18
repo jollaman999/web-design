@@ -40,18 +40,45 @@ header > div {
 .items {
     width: 1200px;
     margin: auto;
+    overflow: hidden;
 }
 .items > div {
     border: 1px solid black;
     height: 200px;
+    float: left;
+    box-sizing: border-box;
 }
 .news {
     width: 500px;
 }
 .banner {
-    width: 500px;
+    width: 350px;
 }
-.footer-inner {}
+.shortcut {
+    width: 350px;
+}
+.footer-inner {
+    background: #ddd;
+}
+footer {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+footer > div {
+    border: 1px solid black;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+}
 .footer-inner > div {}
-.footer-logo {}
-.copyright {}
+.footer-logo {
+    width: 200px;
+}
+.copyright {
+    width: 1000px;
+}
+.copyright > div {
+    border: 1px solid black;
+    height: 50px;
+}
