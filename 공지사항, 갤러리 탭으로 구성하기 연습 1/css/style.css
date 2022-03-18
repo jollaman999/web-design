@@ -5,9 +5,6 @@
 .header-inner {
     background: #eee;
 }
-.header-inner > div {
-
-}
 header {
     height: 100px;
     width: 1200px;
@@ -30,7 +27,6 @@ header > div {
 .content-inner {
     background: #bbb;
 }
-.content-inner > div {}
 .slide {
     width: 1200px;
     margin: auto;
@@ -71,7 +67,6 @@ footer > div {
     float: left;
     box-sizing: border-box;
 }
-.footer-inner > div {}
 .footer-logo {
     width: 200px;
 }
